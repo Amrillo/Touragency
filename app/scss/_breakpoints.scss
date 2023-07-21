@@ -1,0 +1,42 @@
+$breakpoints: (
+    "xxl": 1200px,
+    "xl": 1024px,
+    "md": 767px,
+    "md-2": 667px,
+    "sm": 567px,
+    "e-sm": 375px
+);
+@mixin laptop() {  
+    @media (max-width: map-get($breakpoints, "xxl")){  
+        @content;
+    }
+};
+
+@mixin tablet() {  
+    @media (max-width: map-get($breakpoints, "xl")){  
+        @content;
+    }
+};
+
+@mixin mob-m() {  
+    @media (max-width: map-get($breakpoints, "md")){  
+        @content;
+    }
+};
+@mixin mob-m-2() {
+    @media (max-width: map-get($breakpoints, "md-2")){
+        @content;
+    }
+};
+
+@mixin mob-sm() {  
+    @media (max-width: map-get($breakpoints, "sm")){  
+        @content;
+    }
+};
+@mixin mob-esm() {  
+    @media (max-width: map-get($breakpoints, "e-sm")){  
+        @content;
+    }
+};
+

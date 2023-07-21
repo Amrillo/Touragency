@@ -1,0 +1,108 @@
+.wrapper__bottom {  
+    background-image: url(../images/bg-footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: $base-color;
+    margin-top: -80px;
+    @include mob-esm {   
+    background-image: url(../images/bg-footer-375.png);
+      } 
+}
+
+.order-form {   
+    padding-top: 180px;
+    padding-bottom: 115px;
+    position: relative;
+     z-index: 2;
+
+      @include mob-esm {   
+        padding: 80px 0;
+      } 
+    &__container {   
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start; 
+       color: $base-color;
+       position: relative;
+       z-index: 3;
+    }
+    &__title {   
+        max-width: 588px;
+        margin-bottom: 53px;
+        text-align: left;
+        @include mob-esm {  
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+    }
+    &__text {   
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+        max-width: 435px;
+        margin-bottom: 51px;
+        @include mob-esm {  
+            font-size: 14px;
+            text-align: center;
+
+        }
+    }
+    .form {  
+        display: flex;
+        flex-direction: column;
+        
+        @include mob-esm {  
+            font-size: 14px;
+            width: 100%;
+        }
+        .input-name, 
+        .input-phone {  
+            border: none;
+            color: #0b0b0b;
+            padding: 22px 0 22px 30px;
+            margin-bottom: 20px;
+            border-radius: 27.5px;
+            background-color: $base-color;
+            outline: none;
+            &::placeholder {  
+                color: $dark-color;
+            }
+            @include mob-esm {  
+                font-size: 14px;
+                width: 100%;
+                padding: 18px;
+                border-radius: 25px;
+            }
+           &.border {
+             border: 3px solid red ;
+           }
+        }
+       &__btn {  
+          padding: 22px 45px ; 
+          @include mob-esm {  
+            font-size: 14px;
+            padding: 18px ;
+         }
+       }
+
+    }
+    &__image {   
+        position: absolute;
+        top: 13%;
+        right: 19%;
+        z-index: 1;
+        @include mob-sm {   
+            display: none;
+        }
+    }
+}
+.order-input-error {
+  color: #FF0000FF;
+  display: none;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+ 

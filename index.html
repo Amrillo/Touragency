@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+     
+    <link rel="stylesheet" type="text/css" href="app/plugins/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="app/plugins/slick-theme.css"/>
+    <link rel="stylesheet" href="app/plugins/hover-min.css">
+    <link rel="stylesheet" href="app/dist/style.min.css">
+    <link rel="stylesheet" href="app/plugins/magnific-popup.css">
+    
+</head>
+<body  id="body">
+    <div class="wrapper-top">
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo hvr-pop">
+                    <img class="logo__image" src="app/images/logo.png" alt="logo">
+                    <span class="logo__text">Cappadocia</span>
+                </div>
+                <nav class="navbar" id="js-nav">
+                    <ul class="header__menu">
+                        <li class="header__item hvr-underline-from-left">
+                            <a href="#programm" class="header__link">Программа</a>
+                        </li>
+                        <li class="header__item hvr-underline-from-left">
+                            <a href="#schedule" class="header__link">Расписание</a>
+                        </li>
+                        <li class="header__item hvr-underline-from-left">
+                            <a href="#gallery" class="header__link">Фото</a>
+                        </li>
+                        <li class="header__item hvr-underline-from-left">
+                            <a href="#feedback" class="header__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="order">
+                    <a href="tel:+375295868787" class="order__phone-number hvr-underline-from-left">+375 (29) 586-87-87</a>
+                    <div class="order__call hvr-wobble-vertical" id="btn-order">
+                        <img class="order__icon" src="app/images/phone-icon.png" alt="icon">
+                        <button class="call-btn" type="button">Заказать звонок</button>
+                    </div>
+                </div>
+                <button class="header__burger" id="js-burger" type="button">
+                    <span id="js-top-line" class="top-line"></span>
+                    <span id="js-center-line" class="center-line"></span>
+                    <span id="js-bottom-line" class="bottom-line"></span>
+                </button>
+            </div>
+        </header>
+        <div class="popup">
+            <div class="close-btn">&times</div>
+            <div class="form">
+                <h2 class="sub-title form__title">Форма заявки</h2>
+                <form action="#" class="popup-form" method="post">
+                    <div class="popup-form__elem">
+                        <label for="name1">Имя</label>
+                        <input type="text" class="input-name" name="name"  placeholder="Ваше имя" id="name1">
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="popup-form__elem">
+                        <label for="place">Адрес</label>
+                        <input type="text" class="input-adress" name="adress"  placeholder="Ваш адрес" id="place">
+                        <div class="input-error">Необходимо заполнят поля</div>
+                    </div>
+                    <div class="popup-form__elem">
+                        <label for="phone1">Телефон номер</label>
+                        <input type="text" class="input-phone" name="phone" placeholder="+7-___-___-__-__" id="phone1">
+                        <div class="input-error">Необходимо заполнят поля</div>
+                    </div>
+                    <button type="submit" class="btn popup-form__btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="msg-popup">
+            <div class="msg-text">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+        </div>
+        <section class="main">
+            <div class="container main__container">
+                <div class="main__content wow animate__backInLeft">
+                    <h1 class="main__title">Незабываемая поездка в Каппадокию</h1>
+                    <p class="main__text">Подари себе яркие впечатления,
+                        путешествуя вместе с нами
+                    </p>
+                    <em>Посмотрите на путешествие,
+                        которое вас ждет</em>
+                    <div class="main__clip main__clip480">
+                        <iframe class="iframe" height="241" src="https://www.youtube.com/embed/AyHGlH4Nw4g" allowfullscreen></iframe>
+                    </div>
+                    <button class="btn main__btn hvr-float-shadow">Смотреть программу</button>
+                </div>
+                <div class="main__video wow animate__backInRight">
+                    <div class="main__clip">
+                        <iframe class="iframe" height="241" src="https://www.youtube.com/embed/AyHGlH4Nw4g" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="tour">
+        <div class="tour__image">
+            <img src="app/images/baloon-tour.png" alt="baloon">
+        </div>
+        <div class="container tour__container">
+            <div class="abouts">
+                <h2 class="sub-title abouts__title">Почему нам доверяют</h2>
+                <div class="abouts__qualities">
+                    <div class="abouts__plus">
+                        <div class="tour__number abouts__plus-number">1</div>
+                        <p class="abouts__plus-text">Мы обеспечиваем <strong>комфортные условия</strong> трансфера для наших клиентов</p>
+                    </div>
+                    <div class="abouts__plus">
+                        <div class="tour__number abouts__plus-number">2</div>
+                        <p class="abouts__plus-text">Наша компания уже организовала более <strong>10.000</strong> поездок в Каппадокию</p>
+                    </div>
+                    <div class="abouts__plus">
+                        <div class="tour__number abouts__plus-number">3</div>
+                        <p class="abouts__plus-text">Более <strong>200.000</strong> клиентов оставили положительные отзывы </p>
+                    </div>
+                </div>
+            </div>
+            <div class="programms" id="programm">
+                <h2 class="sub-title programms__title">Программа тура</h2>
+                <div class="programms__places">
+                    <div class="programms__place bg-one wow animate__backInLeft">
+                        <h3 class="programms__subtitle">
+                            <span>1.</span> Шоу «Турецкая ночь»
+                        </h3>
+                        <p class="programms__text">
+                            Кружащиеся Дервиши, танцевальная постановка в стиле настоящей турецкой свадьбы
+                            <span class="dots">...</span> <span class="more-text">,кавказские танцы с
+                                огнем и ножами, барабанное шоу и зажигательный танец живота на десерт</span> 
+                        </p>
+                        <button class="text__more-btn">Читать далее</button>
+                    </div>
+                    <div class="programms__place bg-two wow animate__backInRight">
+                        <h3 class="programms__subtitle">
+                            <span>2.</span> Турецкая баня (Хамам)
+                        </h3>
+                        <p class="programms__text">
+                            Одним из поистине незабываемых впечатлений от поездки в
+                            Турцию являе <span class="dots">...</span> <span class="more-text">
+                            тся посещение Хамама. Турецкая баня помогает человеку расслабиться и достичь умиротворения
+                        </span>
+                        </p>
+                        <button class="text__more-btn">Читать далее</button>
+                    </div>
+                    <div class="programms__place bg-three wow animate__backInLeft">
+                        <h3 class="programms__subtitle">
+                            <span>3.</span> Каньон Ихлара
+                        </h3>
+                        <p class="programms__text">
+                            Остановка на смотровой площадке, откуда открывается захватывающий вид на музей <span class="dots">...</span>
+                            <span class="more-text">Гёреме,самого известного монастырского комплекса Каппадокии,
+                                включенного в список всемирного наследия ЮНЕСКО</span>
+                        </p>
+                        <button  class="text__more-btn">Читать далее</button>
+                    </div>
+                    <div class="programms__place bg-four wow animate__backInRight">
+                        <h3 class="programms__subtitle">
+                            <span>4.</span>  Полет на воздушном шаре
+                        </h3>
+                        <p class="programms__text">
+                            Путешествие на воздушном шаре — лучший способ с высоты птичьего
+                            полета<span class="dots">...</span> <span class="more-text">
+                            насладиться великолепными видами Каппадокии, озаренной первыми лучами солнца
+                        </span>
+                        </p>
+                        <button class="text__more-btn">Читать далее</button>
+                    </div>
+                    <div class="programms__place bg-five wow animate__backInLeft">
+                        <h3 class="programms__subtitle">
+                            <span>5.</span> Долины Каппадокии
+                        </h3>
+                        <p class="programms__text">
+                            Как и в других долинах Каппадокии вы здесь увидите множество пещер,
+                            уникальных христианских<span class="dots">...</span>
+                            <span class="more-text">
+                                церквей, сохранившиеся до наших дней, ухоженные виноградники и плодовые деревья
+                            </span>
+                        </p>
+                        <button class="text__more-btn">Читать далее</button>
+                    </div>
+                    <div class="programms__place bg-six wow animate__backInRight">
+                        <h3 class="programms__subtitle">
+                            <span>6.</span>   Конная прогулка
+                        </h3>
+                        <p class="programms__text">
+                            Отличная возможность покататься верхом по долинам вдали от цивилизации,
+                            насла<span class="dots">...</span> <span class="more-text">
+                            диться сказочными пейзажами и познакомиться с традиционной жизнью и культурой Каппадокии
+                        </span>
+                        </p>
+                        <button class="text__more-btn">Читать далее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages">
+                <h2 class="sub-title advantages__title">Что входит в стоимость тура</h2>
+                <div class="advantage__items">
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">1</span>
+                        <p class="advantage__item-text">Проживание 5 ночей в Стамбуле + 2 ночи в Каппадокии</p>
+                    </div>
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">2</span>
+                        <p class="advantage__item-text">Завтраки и ужины + напитки местного производства</p>
+                    </div>
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">3</span>
+                        <p class="advantage__item-text">Сопровождение профессиональным гидом</p>
+                    </div>
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">4</span>
+                        <p class="advantage__item-text">Шесть экскурсий по программе</p>
+                    </div>
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">5</span>
+                        <p class="advantage__item-text">Фотосессии от профессионального фотографа</p>
+                    </div>
+                    <div class="advantage__item">
+                        <span class="tour__number advantage__item-number">6</span>
+                        <p class="advantage__item-text">Медицинская страховка + тест на коронавирус</p>
+                    </div>
+                    <div class="advantage__noitems">
+                        <h3 class="advantage__noitems-title">В стоимость тура не входит</h3>
+                        <div class="advantage__noitem-content">
+                            <div class="advantage__noitem">
+                                <span class="tour__number advantage__noitem-num">1</span>
+                                <p class="advantage__noitem-text">Обед + личные расходы</p>
+                            </div>
+                            <div class="advantage__noitem">
+                                <span class="tour__number advantage__noitem-num">2</span>
+                                <p class="advantage__noitem-text">Чаевые водителю или гиду
+                                    (по желанию)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="advantages__list">
+                    <li class="advantages__elem"> <strong>1.</strong>5 ночей в Стамбуле + 2 ночи
+                        в Каппадокии
+                    </li>
+                    <li class="advantages__elem"> <strong>2.</strong>Завтраки и ужины + напитки
+                        местного производства
+                    </li>
+                    <li class="advantages__elem"> <strong>3.</strong>Сопровождение гидом
+                    </li>
+                    <li class="advantages__elem"> <strong>4.</strong>Шесть экскурсий по
+                        программе
+                    </li>
+                    <li class="advantages__elem"> <strong>5.</strong>Фотосессии от фотографа
+                    </li>
+                    <li class="advantages__elem"> <strong>6.</strong>Медицинская страховка +
+                        тест на коронавирус
+                    </li>
+                </ul>
+                <h3 class="notour-title">В стоимость тура не входит</h3>
+                <ul class="notour-list">
+                      <li class="notour-item"><strong>1.</strong>Обед + личные расходы </li>  
+                      <li class="notour-item"><strong>2.</strong>Чаевые водителю или гиду(по желанию) </li> 
+                </ul>
+            </div>
+        </div>
+        <div class="tour__image-two">
+            <img src="app/images/baloon-tour2.png" alt="baloon2">
+        </div>
+    </section>
+    <section class="schedule" id="schedule">
+        <div class="container schedule__container">
+            <h2 class="sub-title schedule__title">Расписание туров</h2>
+            <div class="schedule__slider wow animate__lightSpeedInLeft">
+                <div class="schedule__slide">
+                    <strong class="schedule__slide-text">Даты тура</strong>
+                    <p class="schedule__slide-info">29.07.2021 - 04.08.2021</p>
+                    <strong class="schedule__slide-text">Свободно мест</strong>
+                    <p class="schedule__slide-info">Осталось 5 мест</p>
+                    <strong class="schedule__slide-text">Стоимость</strong>
+                    <p class="schedule__slide-info">850 EUR <span>за 1 пассажира</span></p>
+                    <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+                </div>
+               <div class="schedule__slide">
+                   <strong class="schedule__slide-text">Даты тура</strong>
+                   <p class="schedule__slide-info">04.08.2021 - 10.08.2021</p>
+                   <strong class="schedule__slide-text">Свободно мест</strong>
+                   <p class="schedule__slide-info">Осталось 9 мест</p>
+                   <strong class="schedule__slide-text">Стоимость</strong>
+                   <p class="schedule__slide-info">750 EUR <span>за 1 пассажира</span></p>
+                   <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+               </div>
+                <div class="schedule__slide">
+                    <strong class="schedule__slide-text">Даты тура</strong>
+                    <p class="schedule__slide-info">18.08.2021 - 24.08.2021</p>
+                    <strong class="schedule__slide-text">Свободно мест</strong>
+                    <p class="schedule__slide-info">Осталось 15 мест</p>
+                    <strong class="schedule__slide-text">Стоимость</strong>
+                    <p class="schedule__slide-info">650 EUR <span>за 1 пассажира</span></p>
+                    <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+                </div>
+                <div class="schedule__slide">
+                    <strong class="schedule__slide-text">Даты тура</strong>
+                    <p class="schedule__slide-info">29.07.2021 - 04.08.2021</p>
+                    <strong class="schedule__slide-text">Свободно мест</strong>
+                    <p class="schedule__slide-info">Осталось 5 мест</p>
+                    <strong class="schedule__slide-text">Стоимость</strong>
+                    <p class="schedule__slide-info">850 EUR <span>за 1 пассажира</span></p>
+                    <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+                </div>
+                <div class="schedule__slide">
+                    <strong class="schedule__slide-text">Даты тура</strong>
+                    <p class="schedule__slide-info">18.08.2021 - 24.08.2021</p>
+                    <strong class="schedule__slide-text">Свободно мест</strong>
+                    <p class="schedule__slide-info">Осталось 15 мест</p>
+                    <strong class="schedule__slide-text">Стоимость</strong>
+                    <p class="schedule__slide-info">650 EUR <span>за 1 пассажира</span></p>
+                    <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+                </div>
+                <div class="schedule__slide">
+                    <strong class="schedule__slide-text">Даты тура</strong>
+                    <p class="schedule__slide-info">29.07.2021 - 04.08.2021</p>
+                    <strong class="schedule__slide-text">Свободно мест</strong>
+                    <p class="schedule__slide-info">Осталось 5 мест</p>
+                    <strong class="schedule__slide-text">Стоимость</strong>
+                    <p class="schedule__slide-info">850 EUR <span>за 1 пассажира</span></p>
+                    <button class="btn schedule__btn hvr-float-shadow">Забронировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="excursion">
+        <div class="container">
+            <div class="excursion__image">
+                <img src="app/images/baloon-excursion.png" alt="baloon">
+            </div>
+            <h2 class="sub-title  excursion__title">Фотографии с наших экскурсий</h2>
+            <div class="gallery wow animate__zoomInUp" id="gallery">
+                <div class="gallery__slider">
+                    <a href="app/images/gallery-1.png" class="gallery__image gallery__image-one">
+                        <img src="app/images/gallery-1.png" alt="image">
+                    </a>
+                    <a href="app/images/gallery-2.png" class="gallery__image gallery__image-two">
+                        <img src="app/images/gallery-2.png" alt="image">
+                    </a>
+                    <a href="app/images/gallery-3.png" class="gallery__image gallery__image-three">
+                        <img src="app/images/gallery-3.png" alt="image">
+                    </a>
+                    <a href="app/images/gallery-4.png" class="gallery__image gallery__image-four">
+                        <img src="app/images/gallery-4.png" alt="image">
+                    </a>
+                    <a href="app/images/gallery-5.png" class="gallery__image gallery__image-five">
+                        <img src="app/images/gallery-5.png" alt="image">
+                    </a>
+                </div>
+                <div class="gallery__slider">
+                    <a href="app/images/gallery-2-1.jpg"  class="gallery__image gallery__image-one">
+                        <img src="app/images/gallery-2-1.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-2-2.jpg" class="gallery__image gallery__image-two">
+                        <img src="app/images/gallery-2-2.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-2-3.jpg" class="gallery__image gallery__image-three">
+                        <img src="app/images/gallery-2-3.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-2-4.jpg" class="gallery__image gallery__image-four">
+                        <img src="app/images/gallery-2-4.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-2-5.jpg" class="gallery__image gallery__image-five">
+                        <img src="app/images/gallery-2-5.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="gallery__slider">
+                    <a href="app/images/gallery-3-1.jpg" class="gallery__image gallery__image-one">
+                        <img src="app/images/gallery-3-1.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-3-2.jpg" class="gallery__image gallery__image-two">
+                        <img src="app/images/gallery-3-2.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-3-3.jpg" class="gallery__image gallery__image-three">
+                        <img src="app/images/gallery-3-3.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-3-4.jpg" class="gallery__image gallery__image-four">
+                        <img src="app/images/gallery-3-4.jpg" alt="image">
+                    </a>
+                    <a href="app/images/gallery-3-5.jpg" class="gallery__image gallery__image-five">
+                        <img src="app/images/gallery-3-5.jpg" alt="image">
+                    </a>
+                </div>
+            </div>
+            <div class="feedback" id="feedback">
+                <h2 class="feedback__title sub-title">Отзывы наших клиентов</h2>
+                <div class="feedback__cards wow animate__slideInLeft">
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar1.png" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Валерия, 25 лет</strong> 
+                                 <span>Минск, Беларусь</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Очень красивый и уютный городок. Просто гулять по городу уже масса впечатлений — дома в горах, пещеры, 
+                                множество заведений, украшены по-своему и все в общем стиле<span class="dots">...</span> <span class="more-text">
+                                    .Тур оператора выбрала по совету знакомых и
+                                осталась очень довольна. Очень насыщенная и интересная программа.
+                                </span>
+                            </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar2.png" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Олег, 34 года</strong> 
+                                 <span>Москва, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Спасибо за четко организованный тур и насыщенную программу! Ни разу не пожалел, что выбрал вашу компанию
+                                <span class="dots">...</span> <span class="more-text"> .Полеты на воздушном шаре действительно оказались
+                                    незабываемыми. Так же спасибо за
+                                услугу профессионального фотографа, теперь эти моменты счастья останутся со мной на всю жизнь!</span>
+                               </p>
+                                <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar3.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Ирина, 30 года</strong> 
+                                 <span>Москва, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Хорошая компания когда ездили отдыхать нвм помогла данная компания у неё
+                                отличные отзывы всем рекомендую <span class="dots">...</span>   <span class="more-text"> её.Вежливо встречают
+                                также имеются некоторые хорошие отзывы
+                                о этой компании, а самое главное компания предостовляет вам хорошие отзывы которыми
+                                вы можете свободно воспользоваться.</span>
+                            </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar4.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Олга, 28 года</strong> 
+                                 <span>Екатеринбург, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Первое путешествие по невиданным красотам Башкирии прошло именно с ними.
+                                Ездили на восхождение<span class="dots">...</span>   <span class="more-text">
+                                    на гору Айгир. Одна из главных составляющих таких туров инструктора.
+                                С нами был инструктор Егор. Внимательный, отзывчивый, знает все тонкости своей работы.
+                                </span>
+                            </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar5.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Тимати, 25 года</strong> 
+                                 <span>Сочи, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Я недавно воспользовалась услугами туристической компании Visitmurmansk.
+                                info и <span class="dots">...</span>   <span class="more-text">осталась очень довольна своим выбором.
+                                Эта компания предоставляет высококачественные услуги по
+                                организации туров и экскурсий в Мурманск и его окрестности. Я заказала для себя и своей семьи</span></p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar6.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Павел, 24 года</strong> 
+                                 <span>Тула, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">орошая компания когда ездили отдыхать нвм помогла данная компания у неё отличные отзывы всем рекомендую её. Вежливо встречают также имеются некоторые хорошие отзывы о этой компании<span class="dots">...</span>
+                                <span class="more-text">, а самое главное компания предостовляет вам хорошие отзывы которыми вы можете свободно воспользоваться.</span>
+                                </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar7.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Алексанндр,  33 года</strong> 
+                                 <span>Воронеж, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Менеджер компании дал нам подробную консультацию, прежде чем мы
+                                сделали что-нибудь еще.
+                                Учитывая<span class="dots">...</span> <span class="more-text">все наши просьбы, он предоставил нам несколько вариантов
+                                поездки и помог выбрать идеальную. Сотрудники DELLA TOUR проявили высочайший профессионализм
+                                при планировании тура.</span>
+                            </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <div class="feedback__card-info">
+                            <div class="card-image">
+                                <img src="app/images/avatar8.jpg" alt="avatar" width="71" height="68">
+                            </div>    
+                            <div class="card-personal">
+                                <strong>Дмитрий , 27 года</strong> 
+                                 <span>Днепр, Россия</span>
+                            </div>
+                        </div>
+                        <div class="feedback__card-content">
+                            <p class="card-text">Ходили к Большому Будде, в храмы, в парк тигров (тугерпарк), на смотровую площадку,
+                                в старый Пхукет-таун, в ТЦ <span class="dots">...</span><span class="more-text">"Фестивальный".
+                                Мы тогда обошли много заведений, но остановились на LadaTour.
+                                Цены здесь гораздо ниже, чем в других заведениях, девушки говорят на 3-х языках, есть русскоговорящий гид,
+                                все ок.</span>
+                                </p>
+                            <button class="text__more-btn">Читать далее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper__bottom">
+        <section class="order-form">
+            <div class="container order-form__container">
+                <h2 class="sub-title order-form__title">Отправляйтесь в свое путешествие
+                    вместе с нами!</h2>
+                <p class="order-form__text">Заполните форму заявки и ожидайте звонка
+                    нашего менеджера в течении 10 минут</p>
+                <form action="#" class="form wow animate__slideInLeft" method="post" id="order-form">
+                    <input type="text" class="input-name" placeholder="Ваше имя" id="name">
+                    <div class="order-input-error">Необходимо заполнить поле</div>
+                    <input type="text" class="input-phone" placeholder="Ваш телефон" id="phone">
+                    <div class="order-input-error">Необходимо заполнить поле</div>
+                    <button type="submit" class="btn form__btn hvr-float-shadow">Отправить заявку</button>
+                </form>
+            </div>
+            <div class="order-form__image wow animate__slideInLeft">
+                <img src="app/images/balloon-footer.png" alt="baloon">
+            </div>
+        </section>
+        <footer class="footer wow animate__bounceInUp">
+            <div class="container footer__container">
+                <div class="logo footer__logo hvr-pop">
+                    <img class="logo__image" src="app/images/logo.png" alt="logo">
+                    <span class="logo__text">Cappadocia</span>
+                </div>
+                 <div class="footer__media">
+                     <div class="footer__media-title">Мы в соц. сетях</div>   
+                     <ul class="footer__icons">
+                        <li class="footer__icon">
+                            <a href="#" class="footer__icon-link hvr-pop" target="_blank">
+                                <picture>
+                                   <source
+                                       srcset="app/images/vk-320.png"
+                                       media="(max-width: 375px)"/>
+                                    <img src="app/images/vk.png" alt="иконка">
+                                </picture>
+                                <span>Vkontakte</span> 
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#" class="footer__icon-link hvr-pop" target="_blank">
+                                <picture>
+                                    <source
+                                            srcset="app/images/instagram-320.png"
+                                            media="(max-width: 375px)"/>
+                                    <img src="app/images/instagram.png" alt="иконка">
+                                </picture>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="#" class="footer__icon-link hvr-pop" target="_blank">
+                                <picture>
+                                    <source
+                                            srcset="app/images/facebook-320.png" 
+                                            media="(max-width: 375px)"
+                                            />
+                                    <img src="app/images/facebook.png" alt="иконка">
+                                </picture>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                     </ul>
+                 </div>   
+                 <div class="footer__signup">
+                    <div class="footer__signup-title">
+                        Подписка на рассылку
+                    </div>
+                    <p class="footer__signup-text">
+                        Подпишитесь на рассылку новостей и будьте в курсе всех наших выгодных предложений! 
+                    </p>
+                   
+                    <form clsss="footer__form" action="#" method="post">
+                        <div class="footer__input">
+                            <input type="text" class="footer__input-email" placeholder="Введите ваш e-mail">
+                        </div>
+                        <div class="order-input-error">Необходимо заполнить поле</div>
+                        <div class="error-invalid">Нужно указать правильную почту</div>
+                        <button class="footer__submit-btn" type="submit"></button>
+                    </form>
+                </div>
+                <div class="footer__call">
+                    <a href="tel:+375295868787" class="order__phone-number footer__call-number hvr-underline-from-left">+375 (29) 586-87-87</a>
+                    <button class="call-btn footer__call-btn">Заказать звонок</button>
+                </div>
+            </div>  
+        </footer>
+        <div class="loader">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/slick.min.js"></script>
+    <script src="app/js/jquery.magnific-popup.min.js"></script>
+    <script src="app/js/jquery.maskedinput.min.js"></script>
+    <script src="app/js/wow.min.js"></script>
+    <script src="app/js/main.js"></script>
+</body>
+</html>

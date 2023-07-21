@@ -1,0 +1,24 @@
+// colors
+$base-color: rgb(255, 243, 225);
+$dark-color: #2a2927;
+$sec-color: #FA742BFF;
+$yellow-color: rgba(255, 214, 30, 0.67);
+$error-red: #FF0000FF;
+// container paremetres
+$cont-width: 1110px;
+$cont-padding: 50px;
+$cont-padding-m: 35px;
+$cont-padding-sm: 15px;
+$grad-lin: linear-gradient(90deg,$yellow-color 0%, $sec-color 100%);
+
+@mixin margin-center {
+  margin: 0 auto;
+}
+
+@mixin pseudostyle($color1,$color2,$color3) {
+  &::before {
+    background: linear-gradient(45deg, $color1 33% , $color2 66%, $color3) border-box;
+    /* additional styles for the pseudo-element */
+  }
+}
+

@@ -1,0 +1,271 @@
+.excursion {
+  padding: 120px 0;
+  background-color: $base-color;
+  position: relative;
+  top: -96px;
+
+  @include tablet {  
+     top: -98px;
+  }
+  @include mob-esm {  
+    padding: 80px 0;
+  }
+
+  .excursion__image {  
+     position: absolute;
+     top: 35%;
+     left: 0;
+    @include mob-m {
+      display: none;
+    }
+  }
+}
+.gallery {
+
+  &__slider {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 270px 270px;
+    grid-gap: 10px;
+    @include mob-sm {   
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }  
+    @include mob-esm {  
+      grid-template-rows: 176px;
+    }
+    .gallery__image-one {
+      grid-column: 1 / 5 span;
+      @include mob-sm {  
+       grid-column: unset;
+      }
+    }
+    .gallery__image-two {
+      grid-column: 6 / 4 span;
+      border-radius: 15px;
+      @include mob-sm {  
+        display: none;
+      }
+    }
+    .gallery__image-three {
+      grid-column: 10 / 3 span;
+      grid-row: 1/ 2 span;
+      @include mob-sm {  
+        display: none;
+      }
+    }
+    .gallery__image-four {
+      grid-column: 1/ 4 span;
+      @include mob-sm {  
+        display: none;
+      }
+    }
+    .gallery__image-five {
+      grid-column: 5 / 5 span;
+      @include mob-sm {  
+        display: none;
+      }
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    .gallery__image {
+      transition: transform .3s ease-in-out,
+                  box-shadow .3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 5px $dark-color;
+      }
+      border-radius: 15px;
+    }
+  }
+  .slick-dots li button:before {
+    border: 1px solid $dark-color;
+  }
+  
+  .slick-dots li.slick-active button:before{
+    border-color: transparent;
+  }
+
+}
+
+// slider excursion
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: unset;
+    z-index: 1;
+    bottom: -47px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+.prev-btn {
+  left: calc(50% - 68px);
+}
+
+.next-btn {
+  right: calc(51% - 67px);
+  @include mob-sm {  
+    right: calc(51% - 65px);
+  }
+}
+
+.feedback {
+  padding-top: 120px;
+  @include mob-esm {
+    padding-top: 90px;
+  }
+  &__title {
+    @include mob-esm {
+      max-width: 176px;
+      @include margin-center ;
+      margin-bottom: 30px;
+    }
+  }
+  &__cards {
+    max-width: 950px;
+    @include margin-center ;
+    position: relative;
+    .feedback__card {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      border: 2px solid $sec-color;
+      border-radius: 15px;
+      // max-width: 445px;
+      margin: 0 15px;
+      height: 365px;
+      @include tablet {
+        min-height: 267px;
+      }
+      @include mob-m {  
+        max-width: 456px;
+        margin: 0 112px;
+        padding: 40px 30px;
+      }
+      @include mob-m-2 {  
+        margin: 0 74px;
+      }
+      @include mob-sm {
+        margin: 0 32px;
+        height: 100%;
+      }
+      @include mob-esm {
+        padding: 30px 50px 30px 30px;
+        margin: 0;
+      }
+    }
+
+    //display: flex;
+    //flex-direction: column;
+    .feedback__card-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      flex-basis: 20%;
+      @include mob-esm {
+        margin-bottom: 30px;
+      }
+      .card-image {
+        margin-right: 24px;
+        width: 71px;
+        height: 68px;
+        @include mob-m-2 {
+          margin-right: 15px;
+        }
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        @include mob-esm {
+          width: 58px;
+          height: 45px;
+          margin-right: 12px;
+        }
+      }
+      .card-personal {
+        font-size: 14px;
+
+        span {
+          display: block;
+          color: rgb(124, 124, 124);
+          margin-top: 11px;
+          @include mob-esm {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .feedback__card-content {
+    flex-basis: 80%;
+    .card-text {
+      font-size: 14px;
+      color: $dark-color;
+      line-height: 1.643;
+      text-align: left;
+
+      @include tablet {  
+        font-size: 12px;
+      }
+      @include mob-m {  
+        font-size: 13px;
+      }
+      @include mob-sm {
+        .dots {   
+          display: inline;  
+        }
+      
+        .more-text {  
+          display: none;
+        }
+      }
+      @include mob-esm {
+        font-size: 12px;
+        line-height: 1.667;
+      }
+    }
+    @include mob-sm { 
+      .text__more-btn {  
+        display: block;
+      }
+    }
+    
+  }
+
+  .slick-dots li button:before {
+    border: 1px solid $dark-color;
+  }
+
+  .slick-dots li.slick-active button:before{
+    border-color: transparent;
+  }
+  .prev-btn {
+    left: calc(50% - 85px);
+
+    @include mob-m {  
+      left: calc(50% - 140px);
+    }
+    @include mob-sm {
+      left: calc(50% - 132px);
+    }
+  }
+
+  .next-btn {
+    right: calc(51% - 85px);
+    @include mob-m {  
+      right: calc(51% - 140px);
+    }
+    @include mob-sm {
+      right: calc(51% - 132px);
+    }
+    }
+  }
+
+
+ 

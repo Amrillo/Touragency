@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2') ,
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+  url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('../fonts/Philosopher-Bold.woff2') format('woff2') ,
+  url('../fonts/Philosopher-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 15px;
+  background-color: $base-color;
+}
+
+.container {
+    max-width: calc($cont-width + ($cont-padding * 2));
+    padding: 0 $cont-padding;
+    @include margin-center ;
+    @include tablet {   
+      max-width: calc($cont-width + ($cont-padding-m * 2));
+      padding: 0 $cont-padding-m;
+    };
+    @include mob-sm {  
+      max-width: calc($cont-width + ($cont-padding-sm * 2));
+       padding: 0 $cont-padding-sm;
+    }
+}
+.sub-title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Philosopher';
+  @include mob-esm {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+// hover effects  
+
+.hvr-underline-from-left:before {  
+  background: $sec-color;
+  height: 3px;
+}

@@ -1,0 +1,131 @@
+.schedule {
+  background-image: url("../images/schedule-bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -98px;
+  padding-top: 123px;
+  padding-bottom: 105px;
+  background-color: $base-color;
+
+  @include tablet {  
+    top: -98px;
+ }
+  @include mob-esm {
+    background-image: url("../images/schedule-bg-375.png");
+    padding-top: 86px;
+  }
+  &__title {
+    color: $base-color;
+  }
+  //&__slider {
+  //  display: grid;
+  //  grid-template-columns: repeat(3, 1fr);
+  //  grid-column-gap: 30px;
+  //}
+  &__slide {
+     border-radius: 15px;
+     background-color: $base-color;
+     max-width: 350px;
+     margin: 0 15px;
+     padding: 40px;
+
+    @include tablet {
+      max-width: 434px;
+    }
+    @include mob-m-2 {
+      margin: 0 64px;
+      padding: 25px 15px 25px 25px ;
+    }
+    @include mob-sm {
+      margin: 0 40px ;
+    }
+    @include mob-esm {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 0 10px;
+    }
+    .schedule__slide-text {   
+      display: block;
+      margin-bottom: 15px;
+    }
+    .schedule__slide-info {  
+      margin-bottom: 30px;
+      @include mob-esm {
+        font-size: 14px;
+      }
+    }
+    .schedule__btn {
+      padding: 22px;
+      width: 95%;
+      text-align: center;
+      @include margin-center();
+      margin-top: 8px;
+      margin-left: 5px;
+      @include mob-esm {
+        width: 100%;
+        padding: 18px;
+        margin-left: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//slick carousel
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-prev,
+.slick-next {
+  bottom: -55px;
+  top: unset;
+  z-index: 1;
+}
+.slick-prev {
+  left: calc(50% - 97px);
+  @include tablet {
+    left: calc(50% - 95px);
+  }
+  @include mob-m-2 {
+    left: calc(50% - 110px);
+  }
+  &::before {
+    content: url(../images/prev-arrow.png);
+  }
+}
+.slick-next {
+  right: calc(51% - 97px);
+  @include tablet {
+    right:calc(51% - 95px);
+  }
+  @include mob-m-2 {
+    right: calc(51% - 110px);
+  }
+  &::before {
+    content: url(../images/next-arrow.png);
+  }
+}
+//
+.slick-dots li button:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 1px solid $base-color;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before{
+    background: linear-gradient(0deg ,$yellow-color 0%, $sec-color 100%) ;
+}
+.slick-dots {
+  bottom: -48px;
+}
+
+
+ 

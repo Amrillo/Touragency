@@ -1,0 +1,161 @@
+.wrapper-top {
+  background-image: url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  @include mob-sm {  
+    background-image: url("../images/capadocia370.png");
+    background-size: cover;
+  }
+}
+
+.header {
+  padding: 22px 0;
+
+    @include mob-m {
+      position: fixed;
+      width: 100%;
+      z-index: 8;
+      &.scrolled {
+        background-color: $dark-color ;
+      }
+    }
+
+  @include mob-sm {  
+    padding: 12px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $base-color;
+    .header__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__item {
+        padding-bottom: 6px;
+        &:not(:last-child) {
+          margin-right: 40px;
+          @include tablet {  
+            margin-right: 15px;
+          }
+        }
+        .header__link {
+          color:inherit;
+          font-size: 15px;
+          @include mob-sm {  
+            font-size: 24px;
+          } 
+        }
+      }
+    }
+    .order__call {
+      &:hover {
+        .order__icon {
+          opacity: 90%;
+        }
+      }
+    }
+    .order__icon {
+      margin-right: 11px;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+
+  @include mob-m {  
+    .navbar {
+      background: linear-gradient( 0deg, $sec-color 0%, $yellow-color 100%);
+      position:fixed;
+      top:0;
+      right:0;
+      width: 100%;/* 100% = fullscreen */
+      height:100vh;
+      transition: transform 0.7s ease, opacity 1s ease;
+      transform: translateX(100%);
+      opacity:0;
+      z-index: 10;
+      &.show {
+        transform: translateX(0%);
+        opacity:1;
+      }
+      .header__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        height: inherit;
+        .header__item {
+          margin-bottom: 30px;
+          margin-right: 0!important;
+          .header__link  {
+            font-size: 35px;
+            color: $dark-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo__image ,
+.logo__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo__text {
+  font-family: "Philosopher";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $base-color ;
+  @include mob-esm {  
+    font-size: 14px;
+  }
+}
+.logo__image {
+  margin-right: 11px;
+}
+@include mob-m {
+  .order {
+    display: none;
+  }
+}
+
+// special blocks 
+.order__phone-number {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: inherit;
+  padding-bottom: 6px;
+}
+
+.call-btn {
+  border: none;
+  background-image: $grad-lin;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+
+
